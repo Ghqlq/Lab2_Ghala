@@ -12,5 +12,9 @@ module Exercise1 (
     input  [7:0] b,
     output [7:0] out
 );
+    assign out = (op == 2'b00) ? (a + b) :
+                 (op == 2'b01) ? (a - b) :
+                 (op == 2'b10) ? (a & b) :
+                                 (a | b);
 
 endmodule
