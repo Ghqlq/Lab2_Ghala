@@ -6,8 +6,8 @@ module Exercise3 (
     input [15:0] c,
     output [15:0] out
 );
-    wire [15:0] d_alpha;
-    wire [15:0] d_beta;
+    wire [7:0] d_alpha;
+    wire [7:0] d_beta;
     
     Mystery1 Alpha(
         .a(a[1:0]),
